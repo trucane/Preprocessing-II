@@ -105,10 +105,18 @@
 
       .btn{
         position:relative;
-        .button(@button-bg, white, 1.2em);
+        a{
+          font-size:1.5em;
+          text-decoration:none;
+          color:white;
+        }
+        
+        .button(@button-bg, white);
         &:hover{
           .an-animation(an-animation, 1s);
         }
+
+
       }
     }
   }

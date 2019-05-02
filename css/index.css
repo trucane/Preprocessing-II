@@ -329,11 +329,15 @@ nav a {
   position: relative;
   background: #17A2B8;
   color: white;
-  font-size: 1.2em;
   border: 1px solid #17A2B8;
   padding: 15px 0;
   text-align: center;
   border-radius: 12px;
+}
+.home .content-pick .destination .btn a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
 }
 .home .content-pick .destination .btn:hover {
   animation-name: an-animation;
