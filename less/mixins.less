@@ -1,1 +1,21 @@
 // Mixins in here
+
+.flex(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.font-Indie{
+    font-family: 'Indie Flower', cursive;
+}
+
+.button (@bg, @c, @font-sz){
+    background:@bg;
+    color:@c;
+    font-size:@font-sz;
+
+    padding:15px 0;
+    text-align:center;
+    border-radius:12px;
+}
