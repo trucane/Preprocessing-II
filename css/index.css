@@ -1,6 +1,20 @@
 .font-Indie {
   font-family: 'Indie Flower', cursive;
 }
+@keyframes an-animation {
+  0% {
+    background: #17A2B8;
+    right: 10px;
+  }
+  50% {
+    background: #17A2B8;
+    left: 20px;
+  }
+  100% {
+    background: #17A2B8;
+    right: 10px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -312,10 +326,16 @@ nav a {
   }
 }
 .home .content-pick .destination .btn {
+  position: relative;
   background: #17A2B8;
   color: white;
   font-size: 1.2em;
+  border: 1px solid #17A2B8;
   padding: 15px 0;
   text-align: center;
   border-radius: 12px;
+}
+.home .content-pick .destination .btn:hover {
+  animation-name: an-animation;
+  animation-duration: 1s;
 }

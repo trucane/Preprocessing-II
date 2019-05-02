@@ -14,10 +14,26 @@
     background:@bg;
     color:@c;
     font-size:@font-sz;
+    border:1px solid @eastern-blue;
 
     padding:15px 0;
     text-align:center;
     border-radius:12px;
 }
+
+.an-animation(@name, @time){
+    
+
+    animation-name: @name;
+    animation-duration: @time;
+}
+
+@keyframes an-animation{
+    
+    0% {background: @eastern-blue; right:10px;}
+    50% {background: @eastern-blue; left:20px;}
+    100% {background: @eastern-blue; right:10px;}
+
+  }
 
 @mobile: ~"(max-width: 500px)";

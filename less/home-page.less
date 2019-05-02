@@ -104,7 +104,11 @@
       }
 
       .btn{
+        position:relative;
         .button(@button-bg, white, 1.2em);
+        &:hover{
+          .an-animation(an-animation, 1s);
+        }
       }
     }
   }
